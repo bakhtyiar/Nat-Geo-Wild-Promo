@@ -222,7 +222,6 @@ body {
 	height: 600px;
 	position: absolute;
 	right: 2vw;
-	padding-right: 80px;
 }
 
 .articles-slider__articles {
@@ -230,7 +229,7 @@ body {
 	flex-direction: column;
 	height: 100%;
 	overflow-y: scroll;
-
+	padding-right: 80px;
 }
 
 .articles-slider__article:first-child {
@@ -238,8 +237,12 @@ body {
 }
 
 .articles-slider__article {
-	margin-bottom: 173px;
+	margin-bottom: 340px;
 	mix-blend-mode: difference;
+}
+
+.articles-slider__article:last-child {
+	margin-bottom: 170px;
 }
 
 .article__header {
