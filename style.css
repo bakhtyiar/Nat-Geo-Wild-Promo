@@ -217,7 +217,6 @@ body {
 
 .articles-slider {
 	display: flex;
-	align-items: flex-end;
 	gap: 15px;
 	height: 600px;
 	position: absolute;
@@ -227,17 +226,19 @@ body {
 .articles-slider__articles {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 	overflow-y: scroll;
 	padding-right: 80px;
+	gap: 100%;
 }
 
 .articles-slider__article:first-child {
-	margin-top: 45%;
+	margin: calc(600px - 100%) auto;
 }
 
 .articles-slider__article {
-	margin-bottom: 340px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	mix-blend-mode: difference;
 }
 
@@ -249,6 +250,7 @@ body {
 	font-size: 36px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	margin-bottom: 0;
 }
 
 .article__paragraph {
