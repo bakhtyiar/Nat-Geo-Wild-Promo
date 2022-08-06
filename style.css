@@ -87,11 +87,8 @@ body {
 .slider-videos {
 	position: absolute;
 	bottom: 0;
-	left: 1vw;
+	padding: 0 30px;
 	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
 	overflow: auto;
 	z-index: 2;
 	-ms-overflow-style: none;  /* IE and Edge */
@@ -100,15 +97,18 @@ body {
 .slider-videos::-webkit-scrollbar {
 	display: none;
 }
+.slider-videos__content {
+	display: flex;
+	flex-direction: column;
+	padding-top: calc(100vh - 420px);
+}
 
 
 .slider-videos__video {
 	position: relative;
-	bottom: -220px;
 	width: 480px;
 	height: 260px;
 	border-radius: 20px;
-	position: relative;
 	margin-bottom: 30px;
 }
 #monkeys-video {
