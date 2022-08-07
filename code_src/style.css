@@ -85,7 +85,7 @@ body {
 	height: 44px;
 }
 
-.slider-section {
+.hero-section {
 	background: rgba(0, 0, 0, 1) url("./src/gfx/background_hero_section/bg-fl.jpg") center center/cover no-repeat;
 	height: 100vh;
 	position: relative;
@@ -177,7 +177,7 @@ body {
 	height: 32px;
 }
 
-.slider-section__buttons {
+.hero-section__buttons {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -190,7 +190,7 @@ body {
 	width: 64px;
 }
 
-.slider-section__play-button {
+.hero-section__play-button {
 	background: var(--primary-button-color);
 	border-radius: 20px;
 	border: none;
@@ -205,11 +205,11 @@ body {
 	gap: 20px;
 	box-shadow: 0 6px 8px 3px rgba(0, 0, 0, 0.4);
 }
-.slider-section__play-button img {
+.hero-section__play-button img {
 	width: 36px;
 	height: 36px;
 }
-.slider-section__play-button:hover {
+.hero-section__play-button:hover {
 	transition: ease 0.3s;
 	bottom: 20px;
 	box-shadow: 0 8px 16px 8px rgba(0, 0, 0, 0.4);
