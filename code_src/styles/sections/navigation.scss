@@ -1,0 +1,45 @@
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 45px;
+
+	&__links {
+		display: flex;
+		list-style-type: none;
+		padding-left: 0px;
+		gap: 45px;
+
+		li a {
+			color: white;
+			text-decoration: none;
+			padding-bottom: 0;
+
+			&:hover {
+				transition: padding-bottom ease 0.3s;
+				padding-bottom: 4px;
+				border-bottom: 4px solid var(--primary-button-color);
+			}
+		}
+	}
+
+	&__buttons {
+		display: flex;
+		gap: 24px;
+
+	}
+
+	&__button {
+		width: 44px;
+		height: 44px;
+
+		&:hover {
+			transition: ease 0.3s;
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+
+		img {
+			width: 26px;
+		}
+	}
+}

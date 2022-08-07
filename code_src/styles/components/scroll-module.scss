@@ -1,0 +1,19 @@
+.scroll-module {
+	height: 100%;
+
+	.numbers {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: absolute;
+		right: 40px;
+
+		&__number {
+			font-size: 48px;
+			font-weight: bold;
+			letter-spacing: 4px;
+			margin: 0 auto;
+		}
+	}
+}

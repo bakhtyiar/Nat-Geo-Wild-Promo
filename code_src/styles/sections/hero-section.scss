@@ -1,0 +1,46 @@
+.hero-section {
+	background: rgba(0, 0, 0, 1) url("./src/gfx/background_hero_section/bg-fl.jpg") center center/cover no-repeat;
+	height: 100vh;
+	position: relative;
+
+	&__buttons {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: 60vh;
+		gap: 13px;
+	
+		#mouse-scroll-icon {
+			width: 64px;
+		}
+	}
+
+	&__play-button {
+		background: var(--primary-button-color);
+		border-radius: 20px;
+		border: none;
+		color: white;
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 38px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 18px 24px 17px 24px;
+		gap: 20px;
+		box-shadow: 0 6px 8px 3px rgba(0, 0, 0, 0.4);
+
+		&:hover {
+			transition: ease 0.3s;
+			bottom: 20px;
+			box-shadow: 0 8px 16px 8px rgba(0, 0, 0, 0.4);
+		}		
+
+		img {
+			width: 36px;
+			height: 36px;
+		}
+	}
+}
