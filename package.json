@@ -1,0 +1,22 @@
+{
+  "name": "nat_geo_wild-hero_section",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bakhtyiar/Nat-Geo-Wild-layout.git"
+  },
+  "author": "Bakhtyiar Klimov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bakhtyiar/Nat-Geo-Wild-layout/issues"
+  },
+  "homepage": "https://github.com/bakhtyiar/Nat-Geo-Wild-layout#readme",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  }
+}
