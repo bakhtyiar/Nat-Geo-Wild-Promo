@@ -1,0 +1,9 @@
+{
+	"rules": {
+		"indentation": [ 2, { "baseIndentLevel": 1 } ]
+	},
+	"extends": [
+		"stylelint-config-standard",
+		"stylelint-config-standard-scss"
+	]
+}
