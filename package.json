@@ -8,7 +8,8 @@
     "build": "npx parcel build ./code_src/index.html  --public-url ./",
     "report": "parcel build ./code_src/index.html --reporter @parcel/reporter-bundle-analyzer",
     "stylint": "npx stylelint \"code_src/**/*.s{a,c}ss\"",
-    "stylintFix": "npx stylelint \"code_src/**/*.s{a,c}ss\" --fix"
+    "stylintFix": "npx stylelint \"code_src/**/*.s{a,c}ss\" --fix",
+    "htmlHint": "npx htmlhint \"code_src/**/*.html\""
   },
   "repository": {
     "type": "git",
