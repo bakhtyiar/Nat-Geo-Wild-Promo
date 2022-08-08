@@ -1,17 +1,16 @@
 .article {
+  &__header {
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+  }
 
-	&__header {
-		font-size: 36px;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		margin-bottom: 0;
-	}
-
-	&__paragraph {
-		font-weight: 400;
-		font-size: 20px;
-		line-height: 30px;
-		width: 430px;
-		color: rgba(179, 179, 179, 0.8);
-	}
+  &__paragraph {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    width: 430px;
+    color: rgb(179 179 179 / 80%);
+  }
 }
