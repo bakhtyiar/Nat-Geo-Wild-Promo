@@ -6,7 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npx parcel ./code_src/index.html",
     "build": "npx parcel build ./code_src/index.html  --public-url ./",
-    "report": "parcel build ./code_src/index.html --reporter @parcel/reporter-bundle-analyzer"
+    "report": "parcel build ./code_src/index.html --reporter @parcel/reporter-bundle-analyzer",
+    "stylint": "npx stylelint \"code_src/**/*.s{a,c}ss\"",
+    "stylintFix": "npx stylelint \"code_src/**/*.s{a,c}ss\" --fix"
   },
   "repository": {
     "type": "git",
