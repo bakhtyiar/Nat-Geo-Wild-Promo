@@ -46,30 +46,4 @@
   #elephants-video {
     background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 40%)), url("./src/gfx/video_previews/elephant.jpg");
   }
-
-  .video__button {
-    background-color: var(--primary-button-color);
-    padding: 11px;
-    border-radius: 20px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 17px;
-    right: 15px;
-    border: none;
-
-    &:hover {
-      transition: ease 0.3s;
-      bottom: 20px;
-      box-shadow: 0 6px 8px 2px rgb(0 0 0 / 40%);
-    }
-
-    img {
-      width: 32px;
-      height: 32px;
-    }
-  }
 }
