@@ -32,9 +32,8 @@
         display: none;
       }
       flex-direction: row-reverse;
-        gap: 30px;
         padding-top: 0;
-        padding-right: calc(100vh - 280px);
+        padding-right: calc(100vw - 340px);
         overflow-y: hidden;
         overflow-x: auto;
     }
@@ -48,7 +47,7 @@
     margin-bottom: 30px;
 
     @media (max-width: 1400px) {
-      margin: 0;
+      margin: 0 0 0 30px;
       min-width: 280px;
       min-height: 120px;
     }

@@ -2,6 +2,10 @@
   background: rgb(0 0 0 / 100%) url("./src/gfx/background_hero_section/bg-fl.jpg") center center/cover no-repeat;
   height: 100vh;
 
+  @media (max-width: 768px) {
+    background: rgb(0 0 0 / 100%) url("./src/gfx/background_hero_section/unsplash_wSAefyqFmWQ.jpg") center center/cover no-repeat;
+  }
+
   &__content {
     height: 90%;
     display: flex;
@@ -9,6 +13,10 @@
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
+
+    @media (max-width: 1400px) {
+      justify-content: center;
+    }
   }
 
   &__buttons {
@@ -19,11 +27,12 @@
     gap: 13px;
     margin-bottom: 45px;
 
-    @media (max-width: 1400px) {
-    }
-
     #mouse-scroll-icon {
       width: 64px;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
