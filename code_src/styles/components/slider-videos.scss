@@ -4,8 +4,10 @@
   height: 100%;
   overflow: auto;
   z-index: 2;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 
   @media (max-width: 1400px) {
     bottom: auto;
@@ -32,16 +34,20 @@
     padding-top: calc(100vh - 420px);
 
     @media (max-width: 1400px) {
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+
+      /* Firefox */
       &::-webkit-scrollbar {
         display: none;
       }
+
       flex-direction: row-reverse;
-        padding-top: 0;
-        padding-right: calc(100vw - 340px);
-        overflow-y: hidden;
-        overflow-x: auto;
+      padding-top: 0;
+      padding-right: calc(100vw - 340px);
+      overflow-y: hidden;
+      overflow-x: auto;
     }
 
     @media (max-width: 768px) {
@@ -51,12 +57,13 @@
 
   &__video {
     position: relative;
-    width: 260px;
+    width:400px;
     height: 260px;
     border-radius: 20px;
     margin-bottom: 30px;
 
     @media (max-width: 1400px) {
+      width: 320px;
       margin: 0 0 0 30px;
       min-width: 280px;
       min-height: 120px;
@@ -73,20 +80,23 @@
       left: 15px;
       font-weight: 700;
       text-transform: uppercase;
+      text-shadow: 0px 0px 4px #000000;
     }
   }
 
   #monkeys-video {
     background-image: url("./src/gfx/video_previews/monke.jpg");
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
     background-position: center center
   }
 
   #elephants-video {
     background-image: url("./src/gfx/video_previews/elephant.jpg");
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
+    background-size: cover;
+    /* <------ */
+    background-repeat: no-repeat;
     background-position: center center
   }
 }
