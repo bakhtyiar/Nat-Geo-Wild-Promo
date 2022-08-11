@@ -16,6 +16,12 @@
     padding: 0;
   }
 
+  @media (max-width: 768px) {
+    position: relative;
+    order: 2;
+    margin-bottom: 30px;
+  }
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -37,11 +43,15 @@
         overflow-y: hidden;
         overflow-x: auto;
     }
+
+    @media (max-width: 768px) {
+      padding-right: calc(100vw - 480px);
+    }
   }
 
   &__video {
     position: relative;
-    width: 480px;
+    width: 260px;
     height: 260px;
     border-radius: 20px;
     margin-bottom: 30px;

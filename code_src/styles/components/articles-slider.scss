@@ -11,12 +11,20 @@
     right: 0;
   }
 
+  @media (max-width: 768px) {
+    height: 500px;
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
   &__articles {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
     padding-right: 80px;
-    gap: 60%;
+    gap: 100%;
   }
 
   &__article {
@@ -27,7 +35,9 @@
     text-shadow: 0px 0px 4px #000000;
     padding: 16px;
 
-    @media (max-width: 1400px) {
+    @media (max-width: 768px) {
+      align-self: center;
+      padding: 0;
     }
 
     &:first-child {

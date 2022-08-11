@@ -4,6 +4,7 @@
 
   @media (max-width: 768px) {
     background: rgb(0 0 0 / 100%) url("./src/gfx/background_hero_section/unsplash_wSAefyqFmWQ.jpg") center center/cover no-repeat;
+    height: fit-content;
   }
 
   &__content {
@@ -17,6 +18,13 @@
     @media (max-width: 1400px) {
       justify-content: center;
     }
+
+    @media (max-width: 768px) {
+      height: fit-content;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
   }
 
   &__buttons {
@@ -27,10 +35,14 @@
     gap: 13px;
     margin-bottom: 45px;
 
+    @media (max-width: 768px) {
+      order: 1;
+    }
+
     #mouse-scroll-icon {
       width: 64px;
 
-      @media (max-width: 768px) {
+      @media (max-width: 1200px) {
         display: none;
       }
     }
