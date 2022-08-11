@@ -1,5 +1,4 @@
 .slider-videos {
-  position: absolute;
   bottom: 0;
   padding: 0 30px;
   height: 100%;
@@ -7,6 +6,15 @@
   z-index: 2;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+
+  @media (max-width: 1400px) {
+    bottom: auto;
+    top: 0;
+    position: absolute;
+    height: 260px;
+    width: 100%;
+    padding: 0;
+  }
 
   &::-webkit-scrollbar {
     display: none;
@@ -16,6 +24,20 @@
     display: flex;
     flex-direction: column;
     padding-top: calc(100vh - 420px);
+
+    @media (max-width: 1400px) {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      flex-direction: row-reverse;
+        gap: 30px;
+        padding-top: 0;
+        padding-right: calc(100vh - 280px);
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
   }
 
   &__video {
@@ -24,6 +46,12 @@
     height: 260px;
     border-radius: 20px;
     margin-bottom: 30px;
+
+    @media (max-width: 1400px) {
+      margin: 0;
+      min-width: 280px;
+      min-height: 120px;
+    }
 
     img {
       border-radius: 21px;
@@ -40,10 +68,16 @@
   }
 
   #monkeys-video {
-    background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 40%)), url("./src/gfx/video_previews/monke.jpg");
+    background-image: url("./src/gfx/video_previews/monke.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center
   }
 
   #elephants-video {
-    background-image: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 40%)), url("./src/gfx/video_previews/elephant.jpg");
+    background-image: url("./src/gfx/video_previews/elephant.jpg");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center
   }
 }
