@@ -16,5 +16,6 @@
 1. start cli app
 2. > git clone https://github.com/bakhtyiar/Nat-Geo-Wild-Promo.git
 3. > cd Nat-Geo-Wild-layout
-4. > npm run watch
-5. go to http://localhost:1234/
+4. > npm i
+5. > npm run watch
+6. go to http://localhost:1234/
