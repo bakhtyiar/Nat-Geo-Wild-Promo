@@ -1,5 +1,5 @@
 # Nat-Geo-Wild-Promo
-## Hero-section layout
+## Hero-section layout adaptive
 ![preview image](./github_preview.png)
 
 ## Used pure without any libs
