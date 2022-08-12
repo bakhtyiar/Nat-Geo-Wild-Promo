@@ -2,10 +2,15 @@
 ## Hero-section layout
 ![preview image](./github_preview.png)
 
-### Used pure
+## Used pure without any libs
 - HTML  
-- CSS  
+- SCSS
 - JS
+
+## Other instruments
+- Packed by Parcel
+- Linted style by stylelint
+- Linted html by htmlhint
 
 ## How to try
 1. start cli app
